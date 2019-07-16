@@ -19,6 +19,10 @@ public class Accaunt implements Serializable {
         this.balance = balance;
     }
 
+    public long getId() {
+        return id;
+    }
+
     public long getBalance() {
         return balance;
     }
@@ -31,6 +35,6 @@ public class Accaunt implements Serializable {
     public String toString() {
         return "id: " + id +
                ", client: " + client.getPerson() +
-               ", balance: " + balance;
+               ", balance: " + balance + '\n';
     }
 }
