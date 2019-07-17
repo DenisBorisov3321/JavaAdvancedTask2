@@ -4,12 +4,12 @@ public class Transfer {
 
     private Accaunt sender;
     private Accaunt recepient;
-    private long transferAmmount;
+    private long transferAmount;
 
-    public Transfer(Accaunt sender, Accaunt recepient, long transferAmmount) {
+    public Transfer(Accaunt sender, Accaunt recepient, long transferAmount) {
         this.sender = sender;
         this.recepient = recepient;
-        this.transferAmmount = transferAmmount;
+        this.transferAmount = transferAmount;
     }
 
     public Accaunt getSender() {
@@ -20,7 +20,7 @@ public class Transfer {
         return recepient;
     }
 
-    public long getTransferAmmount() {
-        return transferAmmount;
+    public long getTransferAmount() {
+        return transferAmount;
     }
 }

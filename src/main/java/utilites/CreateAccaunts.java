@@ -25,7 +25,7 @@ public class CreateAccaunts {
 
     private Random random = new Random();
 
-    public void createAccantsFiles(){
+    public void createAccauntsFiles(){
         clearAccauntsRepository();
         accauntsStream.forEach(accauntNum -> accaunts.add(generateAccaunt(accauntNum)));
         accaunts.forEach(this::writeBinFile);

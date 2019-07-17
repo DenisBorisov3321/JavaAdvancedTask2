@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         CreateAccaunts createAccaunts = new CreateAccaunts();
         AccauntsService accauntsService = new AccauntsService();
-        createAccaunts.createAccantsFiles();
+        createAccaunts.createAccauntsFiles();
 
         System.out.println(accauntsService.getReadedAccaunts());
     }
