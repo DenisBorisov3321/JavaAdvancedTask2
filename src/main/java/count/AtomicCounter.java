@@ -6,4 +6,5 @@ public class AtomicCounter {
     public static AtomicInteger processedCounter = new AtomicInteger(0);
     public static AtomicInteger rejectedCounter = new AtomicInteger(0);
     public static AtomicInteger overallCounter = new AtomicInteger(0);
+    public static AtomicInteger testCounter = new AtomicInteger(0);
 }

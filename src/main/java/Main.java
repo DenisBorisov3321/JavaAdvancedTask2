@@ -18,7 +18,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
 
     private static final int THREADS_COUNT = 20;
-    private static final int TRANSACTIONS_COUNT = 10;
+    private static final int TRANSACTIONS_COUNT = 1000;
 
     public static void main(String[] args) {
         CreateAccaunts createAccaunts = new CreateAccaunts();
