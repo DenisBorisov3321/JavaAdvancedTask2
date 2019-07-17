@@ -23,8 +23,16 @@ public class Accaunt implements Serializable {
         return id;
     }
 
+    public String getClientName(){
+        return client.getPerson();
+    }
+
     public long getBalance() {
         return balance;
+    }
+
+    public void setBalance(long balance) {
+        this.balance = balance;
     }
 
     public ReentrantLock getLock() {
@@ -34,7 +42,7 @@ public class Accaunt implements Serializable {
     @Override
     public String toString() {
         return "id: " + id +
-               ", client: " + client.getPerson() +
-               ", balance: " + balance + '\n';
+               ", Клиент: " + client.getPerson() +
+               ", Баланс счета: " + balance + '\n';
     }
 }

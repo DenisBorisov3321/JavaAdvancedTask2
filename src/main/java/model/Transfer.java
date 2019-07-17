@@ -23,4 +23,12 @@ public class Transfer {
     public long getTransferAmount() {
         return transferAmount;
     }
+
+    @Override
+    public String toString() {
+        return "Трансфер: " +
+                "от " + sender +
+                ", для " + recepient +
+                ", на сумму " + transferAmount;
+    }
 }

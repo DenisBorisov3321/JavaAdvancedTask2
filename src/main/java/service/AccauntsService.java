@@ -34,4 +34,8 @@ public class AccauntsService {
         });
         return readedAccaunts;
     }
+
+    public long getTotalBalance(List<Accaunt> accauntsList){
+        return accauntsList.stream().mapToLong(Accaunt::getBalance).sum();
+    }
 }

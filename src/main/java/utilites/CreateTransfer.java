@@ -12,11 +12,9 @@ public class CreateTransfer {
     private Random random = new Random();
     private AccauntsService accauntsService = new AccauntsService();
     private List<Accaunt> accaunstList = accauntsService.getReadedAccaunts();
-    private int senderId = random.nextInt(accaunstList.size());
-    private int recepientId = random.nextInt(accaunstList.size());
 
     public Transfer createTransfer(){
         return new Transfer(accaunstList.get(random.nextInt(accaunstList.size())),
-                accaunstList.get(random.nextInt(accaunstList.size())), random.nextInt(500));
+                accaunstList.get(random.nextInt(accaunstList.size())), random.nextInt(1000));
     }
 }
